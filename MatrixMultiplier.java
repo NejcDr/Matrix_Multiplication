@@ -76,7 +76,14 @@ public class MatrixMultiplier {
 		
 		System.out.println("Total " + n_gen + " matrixes generated.");
 		System.out.println("Total " + n_mul + " matrix multiplications.");
+		
 		System.out.println("Time for generating matrixes: " + durationOfGenerations + " ms.");
 		System.out.println("Time for matrix multiplications: " + durationOfMultiplications + " ms.");
+		
+		long avg_gen = durationOfGenerations / n_gen;
+		long avg_mul = durationOfMultiplications / n_mul;
+		
+		System.out.println("Avarage time to generate one matrix: " + avg_gen + " ms.");
+		System.out.println("Avarage time for one multiplication: " + avg_mul + " ms.");
 	}
 }
